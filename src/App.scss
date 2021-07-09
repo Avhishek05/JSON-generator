@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #aaffa9, #11ffbd);
+
+  .btn {
+    font-family: cursive;
+    height: 50px;
+    margin: 10px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    width: 100%;
+    box-shadow: 0 -20px 0 -20px;
+    background: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    min-width: 100px;
+    text-transform: uppercase;
+  }
+  .pushed-content.object-container {
+    text-align: left;
+  }
+
+}
