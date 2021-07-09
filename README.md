@@ -2,10 +2,9 @@
 
 A simple react component to generator a dummy JSON.
 
-Demo here: https://nadbm.github.io/react-datasheet/
+Demo here:
 
 Examples are located in
-https://github.com/nadbm/react-datasheet/tree/master/docs/src/examples
 
 Current features:
 
