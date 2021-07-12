@@ -2,7 +2,7 @@
 
 A simple react component to generator a dummy JSON.
 
-Demo here:
+Demo here: https://avhishek05.github.io/json-generator/
 
 Examples are located in
 
