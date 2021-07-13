@@ -112,7 +112,7 @@ export const JSONGeneratorComponent = () => {
         return obj;
     }
 
-    const generate = (isDownload, showDemo) => {
+    const generate = (showDemo) => {
         let arr = [];
         let selectedObjects = configObj.filter(i => i.isSelected && i.field.length > 0)
         for (let i = 0; i < noOfObj; i++) {
@@ -122,9 +122,7 @@ export const JSONGeneratorComponent = () => {
         }
         console.log(arr);
         setOutput(arr[0]);
-        if (isDownload) {
-           
-        } else if(!showDemo) {
+        if(!showDemo) {
             let myJson = JSON.stringify(arr, null, 2);
             let x = window.open();
             x.document.open();
@@ -214,11 +212,11 @@ export const JSONGeneratorComponent = () => {
                         <span>(max 500)</span>
                     </div>
                     <div style={{ marginTop: 20 }}>
-                        <button className={'btn'} style={{ width: 200 }} onClick={()=>generate(false, true)}>Show Demo
+                        <button className={'btn'} style={{ width: 200 }} onClick={()=>generate(true)}>Show Demo
                         </button>
                     </div>
                     <div style={{ marginTop: 20 }}>
-                        <button className={'btn'} style={{ width: 200 }} onClick={generate}>Generate
+                        <button className={'btn'} style={{ width: 200 }} onClick={()=>generate(false)}>Generate
                         </button>
                     </div>
                     {/* <div style={{ marginTop: 20 }}>
